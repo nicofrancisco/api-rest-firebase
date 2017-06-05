@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400');
+
+
+h2{font-family: 'Quicksand', sans-serif  !important;}
+
+body {
+font: normal normal 13px/16px 'Open Sans', sans-serif !important;
+background: #ccc;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: white;
+  border-radius: 5px;
+  }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: stretch;
+
+}
+
+input{
+  display: flex;
+  align-items: stretch;
+  padding: 12px 12px 12px 0px;
+}
+
+textarea{
+  resize: none;
+}
+
+#button-add{
+  display: inline-block;
+  background-color: rgb(210, 78, 205);
+  color:#ffffff;
+  border-radius: 5px;
+  text-align:center;
+  margin-top:2px;
+  padding: 10px 10px;
+}
+
+#button-add:hover{
+  cursor: pointer;
+  }
+
+  ul {list-style: none; float: none; padding-right: 15px; padding-left: 15px;}
+
+  ul li {color:#000; height: 160px; margin-bottom: 55px;} /*display: flex; flex-direction: row;* padding: 5px;*/
+
+
+
+.strike{text-decoration: line-through;}
+
+li:hover{
+  cursor: pointer;
+ }
+
+.img-loader{
+
+  width: 320px;
+  height: 320px;
+  background-color: rgb(42, 181, 164);
+}
+
+.renderItem{
+  word-wrap:break-word;
+  /*display: flex;
+  justify-content: flex-end;*/
+}
+
+
+
+.contentItem{
+
+  display: flex;
+  align-self: flex-start;
+  justify-content:flex-start;
+}
+
+
+.edit-me{
+
+
+  align-self: flex-end;
+  background-color: white;
+  color:#333;
+
+}
+
+.deleteMe{
+
+
+
+}
+
+.bar {
+    height: 18px;
+    background: green;
+}
+
+#myModal{
+
+      display: flex;
+      right:35%;
+      top:5%;
+      left: 35%;
+      outline: none;
+
+}
+
+.modal.fade.in {
+
+    background: rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 0px #000;
+    -o-box-shadow: 0 0 0px #000;
+    -ms-box-shadow: 0 0 0px #000;
+    box-shadow: 0 0 0px #000;
+    text-align: center;
+}
+
+
+.modal-dialog {
+  text-align: center;
+    background: rgba(0, 0, 0, 0);
+}
+
+label {
+    margin-bottom: 50px;
+}
+
+.pano {
+
+  display: block;
+  max-width:185px;
+  max-height:185px;
+  width: auto;
+  height: auto;
+
+}
+
+.panoPopUp {
+
+  display: block;
+  max-width:185px;
+  max-height:185px;
+  width: auto;
+  height: auto;
+  align-self: center;
+
+}
+
+.img-item {
+
+  display: block;
+  max-width:230px;
+  max-height:140px;
+  width: auto;
+  height: auto;
+
+}
+
+#spin {
+  height: 60px;
+}
+
+
+//////////////////
+
+/* FONT AWESOME & not necessary for functions */
+/*@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');*/
+
+body {
+    padding-top: 15px;
+    background-color: #f9f9f9;
+    font: normal normal 13px/16px;
+    background: #ccc;
+}
+
+
+/*REQUIRED*/
+.carousel-row {
+    margin-bottom: 10px;
+}
+
+.row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+
+.slide-row {
+
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    min-height: 150px;
+    border: 1px solid #e7e7e7;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+}
+
+
+.slide-carousel {
+
+    width: 20%;
+    display: inline-block;
+}
+
+.slide-carousel .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.slide-carousel .carousel-indicators li {
+    border-radius: 0;
+    width: 20px;
+    height: 6px;
+}
+
+.slide-carousel .carousel-indicators .active {
+    margin: 1px;
+}
+
+.slide-content {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: block;
+    float: left;
+    width: 80%;
+    max-height: 76%;
+    padding: 1.5% 2% 2% 2%;
+    overflow-y: auto;
+}
+
+.slide-content h4 {
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+
+.slide-footer {
+
+    bottom: 0;
+    width: 100%;
+    margin: 1%;
+}
+
+/* Scrollbars */
+.slide-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.slide-content::-webkit-scrollbar-thumb:vertical {
+  margin: 5px;
+  background-color: #999;
+  -webkit-border-radius: 10px;
+}
+
+.slide-content::-webkit-scrollbar-button:start:decrement,
+.slide-content::-webkit-scrollbar-button:end:increment {
+  height: 5px;
+  display: block;
+}
