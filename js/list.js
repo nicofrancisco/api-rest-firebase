@@ -41,13 +41,15 @@ $(document).ready(
           var index = $(element).closest('li').attr('id');
           var id_db = $(element.context.nextElementSibling).attr('id');
 
-          title = $(element).parents().eq(index).find('.slide-content h4').text();//)
-          desc = $(element).parents().eq(index).find('.slide-content p').text();//)
-          img = $(element).parents().eq(index).find('.carousel-inner img').attr('src');
+          console.log("check " + $(element).parents().eq(1).find('.slide-content h4').text());
 
-          titleObj = $(element).parents().eq(index).find('.slide-content h4');
-          descObj = $(element).parents().eq(index).find('.slide-content p');
-          imgObj = $(element).parents().eq(index).find('.carousel-inner img');
+          title = $(element).parents().eq(1).find('.slide-content h4').text();//)
+          desc = $(element).parents().eq(1).find('.slide-content p').text();//)
+          img = $(element).parents().eq(1).find('.carousel-inner img').attr('src');
+
+          titleObj = $(element).parents().eq(1).find('.slide-content h4');
+          descObj = $(element).parents().eq(1).find('.slide-content p');
+          imgObj = $(element).parents().eq(1).find('.carousel-inner img');
 
 
           var modal = $(this);
@@ -104,11 +106,30 @@ $(document).ready(
             $(imgObj).attr('src', updatedImg);
 
 
-              var objItem = {
-                  desc: newdes,
-                  title: newtitle,
-                  img: updatedImg
+
+              var objItem = {};
+
+              if(updatedImg === undefined){
+                console.log("ES UNDEFINED");
+                objItem = {
+                    desc: newdes,
+                    title: newtitle,
+                    img: img
+
+                }
+
+
+              }else{
+
+                objItem = {
+                    desc: newdes,
+                    title: newtitle,
+                    img: updatedImg
+                }
+
               }
+
+
 
               //Service call to update DB
               ListService.updateItem(id_db, objItem)
@@ -181,7 +202,7 @@ $(document).ready(
                   $('input[name=list-item]').val('');
                   $('textarea[name=area-item]').val('');
 
-                  
+
                   //ADD image
                   if($("#img"+fixID).children().length < 1){
 
