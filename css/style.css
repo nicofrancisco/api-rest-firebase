@@ -56,7 +56,7 @@ textarea{
 
   ul {list-style: none; float: none; padding-right: 15px; padding-left: 15px;}
 
-  ul li {color:#000; height: 160px; margin-bottom: 55px;} /*display: flex; flex-direction: row;* padding: 5px;*/
+  ul li {color:#000; } /*height: 160px; margin-bottom: 55px;*/
 
 
 
@@ -163,8 +163,8 @@ label {
 .img-item {
 
   display: block;
-  max-width:230px;
-  max-height:140px;
+  max-width:170px;
+  max-height:170px;
   width: auto;
   height: auto;
 
