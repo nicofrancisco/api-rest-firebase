@@ -13,7 +13,8 @@ var Item = (function(){
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
-                              <div id="img`+id+`" class="item active">
+                              <!--<div id="img`+id+`" class="item active"> REMOVED BUT CHECK ITEM MARGIN-->
+                              <div id="img`+id+`">
 
                               </div>
 
